@@ -1,10 +1,7 @@
-Spotify Objective-C Coding Style
+Propeller Objective-C Coding Style Guide
 ================================
 
-Version: 0.9.0
-
-Our general coding conventions at Spotify are documented on an internal wiki, but specifics for Objective C and
-Objective C++ code in the iOS client are documented here.
+Version: 1.0.0
 
 License
 -------
