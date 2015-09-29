@@ -676,3 +676,23 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 @property (nonatomic, readonly) BOOL on;
 ```
 
+* Use full names in most cases. (e.g. 'medication' instead of 'med')
+* For array properties, use either the 'List' suffix or a plural name (e.g. deliveryDevices or deliverDeviceList)
+* Use NSDate whenever possible. Avoid using strings to hold dates
+* Use JSONKeyMapper to map API key names to Objective-C style variable names rather than setting the property's getter
+
+**Preferred:**
+```objc
++ (JSONKeyMapper*)keyMapper{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"typ": @"type",
+                                                       @"fNam": @"firstName"
+                                                       }];
+}
+```
+
+**Not Preferred:**
+```objc
+@property (nonatomic, getter=type) NSString *typ;
+@property (nonatomic, getter=firstName) NSString *fNam;
+```
