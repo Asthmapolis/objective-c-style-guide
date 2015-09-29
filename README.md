@@ -38,6 +38,7 @@ The creation of this style guide was a collaborative effort of Jim Dabrowski and
 * [Golden Path](#golden-path)
 * [Error handling](#error-handling)
 * [Singletons](#singletons)
+* [Model Objects](#model-objects)
 
 ## Xcode Project Organization
 
@@ -658,3 +659,9 @@ Singleton objects should use a thread-safe pattern for creating their shared ins
 }
 ```
 This will prevent [possible and sometimes prolific crashes](http://cocoasamurai.blogspot.com/2011/04/singletons-your-doing-them-wrong.html).
+
+## Model Objects
+
+We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects from the API.
+
+
