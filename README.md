@@ -664,4 +664,15 @@ This will prevent [possible and sometimes prolific crashes](http://cocoasamurai.
 
 We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects from the API.
 
+* Prefix bools with 'is'
+
+**Preferred:**
+```objc
+@property (nonatomic, readonly) BOOL isOn;
+```
+
+**Not Preferred:**
+```objc
+@property (nonatomic, readonly) BOOL on;
+```
 
