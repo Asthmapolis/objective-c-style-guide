@@ -683,6 +683,12 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 
 **Preferred:**
 ```objc
+
+@interface
+@property (nonatomic, getter=type) NSString *typ;
+@property (nonatomic, getter=firstName) NSString *fNam;
+
+@implementation
 + (JSONKeyMapper*)keyMapper{
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"typ": @"type",
