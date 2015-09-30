@@ -694,7 +694,7 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 + (JSONKeyMapper *)keyMapper{
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"typ": @"type",
-                                                       @"fNam": @"firstName"
+                                                       @"fnam": @"firstName"
                                                        }];
 }
 ```
@@ -702,5 +702,5 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 **Not Preferred:**
 ```objc
 @property (nonatomic, getter=type) NSString *typ;
-@property (nonatomic, getter=firstName) NSString *fNam;
+@property (nonatomic, getter=firstName) NSString *fnam;
 ```
