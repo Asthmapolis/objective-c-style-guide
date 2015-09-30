@@ -691,7 +691,7 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 
 @implementation
 
-+ (JSONKeyMapper*)keyMapper{
++ (JSONKeyMapper *)keyMapper{
     return [[JSONKeyMapper alloc] initWithDictionary:@{
                                                        @"typ": @"type",
                                                        @"fNam": @"firstName"
