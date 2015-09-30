@@ -1,5 +1,5 @@
 # Propeller Objective-C Coding Style Guide
-This style guide outlines the coding conventions for raywenderlich.com.
+#### This style guide outlines the coding conventions for raywenderlich.com.
 ================================
 
 ## Introduction
