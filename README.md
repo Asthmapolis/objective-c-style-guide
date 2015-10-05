@@ -704,3 +704,21 @@ We use JSONModel (https://github.com/icanzilb/JSONModel) to create model objects
 @property (nonatomic, getter=type) NSString *typ;
 @property (nonatomic, getter=firstName) NSString *fnam;
 ```
+
+* Use propertyIsOptional to set primitive data types as optional
+
+```objc
+
+@interface
+
+@property (nonatomic) BOOL isDiscontinued;
+
+@implementation
+
++ (BOOL)propertyIsOptional:(NSString*)propertyName{
+    if ([propertyName isEqualToString:@"isDiscontinued"]){
+        return YES;
+    }
+    return NO;
+}
+```
